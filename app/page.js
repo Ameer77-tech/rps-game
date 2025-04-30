@@ -70,13 +70,14 @@ const page = () => {
   return (
     <>
       <Header/>
-      <div className='h-full bg-black items-center flex justify-center' >
-        <div className=' flex flex-col gap-2 p-5 w-2/4 h-full mt-10 '>
-        <div className='flex justify-between w-full'>
-          <Icons icon={icon1} name="paper" onClick={()=>choice("paper")}/>
-          <Icons icon={icon2} name="rock" onClick={()=>choice("rock")}/>
-          <Icons icon={icon3} name="scissors" onClick={()=>choice("scissors")}/>
-         </div>
+      <div className='h-full bg-black items-center flex justify-center'>
+      <div className='flex flex-col gap-2 p-5 w-full sm:w-2/4 mt-10'>
+        <div className="flex justify-between w-full">
+  <Icons icon={icon1} name="paper" onClick={() => choice("paper")} className="w-16 h-16 sm:w-20 sm:h-20 md:w-25 md:h-25" />
+  <Icons icon={icon2} name="rock" onClick={() => choice("rock")} className="w-16 h-16 sm:w-20 sm:h-20 md:w-25 md:h-25" />
+  <Icons icon={icon3} name="scissors" onClick={() => choice("scissors")} className="w-16 h-16 sm:w-20 sm:h-20 md:w-25 md:h-25" />
+</div>
+
        <div className='pl-2 mt-10 flex flex-col gap-5'>
          <h1 className=''>You Chose : {user}</h1>
          <div className='flex justify-center items-center'>
