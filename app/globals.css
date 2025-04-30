@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+body{
+    background: #000;
+}
+.head{
+    translate: -50% -50%;
+}
